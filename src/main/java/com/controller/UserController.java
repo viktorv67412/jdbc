@@ -41,10 +41,13 @@ public class UserController extends HttpServlet {
             req.setAttribute("users", users);
             req.getRequestDispatcher("index.jsp").forward(req, resp);
 
+
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+
     }
 }

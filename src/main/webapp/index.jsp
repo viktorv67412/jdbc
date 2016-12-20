@@ -12,7 +12,7 @@
         Age<br>
         <input type="text" name="age_ui"/><br>
 
-        <input type="submit" value="add"/>
+        <input type="submit" value="add"/><br>
     </form>
 </div>
 <div style="width: 100%; height: 80%; background: #16DB8B; background-size: cover; display: inline-block; overflow: scroll;">
@@ -21,7 +21,7 @@
             <%--@elvariable id="users" type="java.util.List"--%>
             <c:forEach items="${users}" var="user">
                 <tr>
-                    <td>
+                    <td >
                         <c:out value="${user}"/>
                     </td>
                 </tr>
@@ -29,5 +29,6 @@
         </table>
     </form>
 </div>
+
 </body>
 </html>
